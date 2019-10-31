@@ -1,0 +1,67 @@
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: orange;
+}
+
+/* 3 Columns: 100px 1fr 1fr, 3 rows: 1fr 3fr 50px */
+.homegrid {
+    display: grid;
+    width: 90vw;
+
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 1fr 50px;
+
+    background-color: lavender;
+}
+
+header {
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 1em 1em;
+
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+nav {
+    background-color: green;
+
+    display: flex;
+    justify-content: flex-end;
+
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+nav li {
+    display: flex;
+    padding: .1em 3em;   
+}
+
+section {
+    background-color: orange;
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+section li{
+    display: flex;
+    padding: .5em 0em;
+}
+
+footer {
+    background-color: beige;
+
+    text-align: right;
+
+    padding: 1em 1em;
+}
