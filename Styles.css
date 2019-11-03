@@ -10,8 +10,9 @@
 /* 3 Columns: 100px 1fr 1fr, 3 rows: 1fr 3fr 50px */
 .homegrid {
     display: grid;
+    width: 98vw;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 1fr;
     grid-template-rows: 100px 70px 1fr 50px;
 
     background-color: lavender;
@@ -77,9 +78,15 @@ section {
     grid-row: 3/4;
 }
 
-.image{
+.img{
     grid-column: 2/3;
     grid-row: 3/4;
+}
+
+.images{
+    object-fit: scale-down;
+    max-width: 45vw;
+    border: 2px solid black;
 }
 
 .bib{
