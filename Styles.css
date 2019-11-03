@@ -82,13 +82,11 @@ section {
     grid-column: 2/3;
     grid-row: 3/4;
 }
-
-.images{
-    object-fit: scale-down;
+/*Each individual Image*/
+section img{
     max-width: 45vw;
-    border: 2px solid black;
+    object-fit: scale-down;
 }
-
 .bib{
     grid-column: 1/3;
     grid-row: 3/4;
